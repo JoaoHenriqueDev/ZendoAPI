@@ -1,0 +1,6 @@
+@ZendoAPI_HostAddress = http://localhost:5224
+
+GET {{ZendoAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
