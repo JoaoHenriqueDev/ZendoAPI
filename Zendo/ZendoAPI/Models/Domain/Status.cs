@@ -2,11 +2,10 @@
 {
     public class Status
     {
-        private Guid id;
+        public Guid Id { get; set; }
         private String name;
         private int order;
 
-        public Guid Id { get { return id; } }
         public String Name { get { return name; } set { name = value; } }
         public int Order { get { return order; } set { order = value; }  }
     }
