@@ -1,6 +1,6 @@
 ﻿namespace ZendoAPI.Models.Dto
 {
-    public class ComentarioDto
+    public record ComentarioDto(Guid id, Guid ticketId, Guid autoId, String mensagem, DateTime createdAt)
     {
     }
 }

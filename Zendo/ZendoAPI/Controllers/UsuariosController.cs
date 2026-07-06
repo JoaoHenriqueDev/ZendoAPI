@@ -7,5 +7,6 @@ namespace ZendoAPI.Controllers
     [ApiController]
     public class UsuariosController : ControllerBase
     {
+
     }
 }
