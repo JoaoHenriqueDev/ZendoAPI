@@ -20,15 +20,15 @@ namespace ZendoAPI.Repositories.Usuarios
             return usuario;
         }
 
-        public async Task DeleteUser(Guid id)
+        public async Task<bool> DeleteUser(Guid id)
         {
             var usuario = await dbContext.Usuarios.FirstOrDefaultAsync(x => x.Id == id);
             if(usuario == null)
             {
-            
+                return false;
             }
             dbContext.Usuarios.Remove(usuario);
-       
+            return true;
         }
 
         public async Task<bool> EmailExistente(string email)
